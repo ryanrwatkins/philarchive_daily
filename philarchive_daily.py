@@ -5,7 +5,6 @@ import os
 
 gmail_pw = os.environ["SECRET_GMAIL_PW"]
 gmail_address = os.environ["SECRET_GMAIL"]
-#gmail_address = 'ryanrwatkins@gmail.com'
 email_address = os.environ["SECRET_EMAIL"]
 rss_url = os.environ["SECRET_RSS"]
 
