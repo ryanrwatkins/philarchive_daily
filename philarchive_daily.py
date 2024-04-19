@@ -3,7 +3,10 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import os
 
-SECRET = os.environ["SECRET"]
+gmail_pw = os.environ["SECRET"]
+gmail_address = os.environ["GMAIL_ADDRESS"]
+email_address = os.environ["EMAIL_ADDRESS"]
+rss_url = os.environ["RSS_URL"]
 
 # Calculate yesterday's date in the format used by the website (adjust format as needed)
 yesterday = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
@@ -62,14 +65,14 @@ import smtplib
 from email.mime.text import MIMEText
 
 # Set Global Variables
-gmail_user = 'ryanrwatkins@gmail.com'  
-gmail_password = SECRET   
+gmail_user = gmail_address 
+gmail_password = gmail_pw
 
 # this is an app password not your personal password, instructions for setting this up are found at: support.google.com/accounts/answer/185833?hl=en
 
 # to and from
 mail_from = gmail_user
-mail_to = ['gjq16864vz9u9yl8@kill-the-newsletter.com', 'rwatkins@email.com']  #the first email address creates an RSS feed using https://kill-the-newsletter.com/
+mail_to = [rss_url, email_address]  #the first email address creates an RSS feed using https://kill-the-newsletter.com/
 
 # create message
 msg = MIMEText(results_str, 'html') 
