@@ -3,10 +3,10 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import os
 
-gmail_pw = os.environ["GMAIL_PW"]
-gmail_address = os.environ["GMAIL_ADDRESS"]
-email_address = os.environ["EMAIL_ADDRESS"]
-rss_url = os.environ["RSS_URL"]
+gmail_pw = os.environ["SECRET_GMAIL_PW"]
+gmail_address = os.environ["SECRET_GMAIL"]
+email_address = os.environ["SECRET_EMAIL"]
+rss_url = os.environ["SECRET_RSS"]
 
 # Calculate yesterday's date in the format used by the website (adjust format as needed)
 yesterday = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
