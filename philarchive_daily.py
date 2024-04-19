@@ -69,7 +69,7 @@ gmail_password = SECRET
 
 # to and from
 mail_from = gmail_user
-mail_to = ['wn2vf2q2e0p6ucm8@kill-the-newsletter.com', 'rwatkins@email.com']  #the first email address creates an RSS feed using https://kill-the-newsletter.com/
+mail_to = ['gjq16864vz9u9yl8@kill-the-newsletter.com', 'rwatkins@email.com']  #the first email address creates an RSS feed using https://kill-the-newsletter.com/
 
 # create message
 msg = MIMEText(results_str, 'html') 
