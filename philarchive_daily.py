@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import os
 
-gmail_pw = os.environ["SECRET"]
+gmail_pw = os.environ["GMAIL_PW"]
 gmail_address = os.environ["GMAIL_ADDRESS"]
 email_address = os.environ["EMAIL_ADDRESS"]
 rss_url = os.environ["RSS_URL"]
